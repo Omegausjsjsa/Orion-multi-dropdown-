@@ -6,7 +6,8 @@ local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
 
 
-local OrionLib = {
+
+    local OrionLib = {
     Elements = {},
     ThemeObjects = {},
     Connections = {},
@@ -20,12 +21,12 @@ local OrionLib = {
             Text = Color3.fromRGB(240, 240, 240),
             TextDark = Color3.fromRGB(150, 150, 150)
         },
-        Custom = {  -- New custom theme with unique colors
-            Main = Color3.fromRGB(45, 50, 70),          -- Deep slate blue background
-            Second = Color3.fromRGB(55, 60, 80),        -- Lighter shade for depth
-            Stroke = Color3.fromRGB(0, 204, 204),       -- Vibrant teal for strokes
-            Divider = Color3.fromRGB(90, 95, 110),      -- Soft grayish-blue for dividers
-            Text = Color3.fromRGB(255, 255, 255),       -- Bright white for text
+        Custom = {  -- New elegant custom theme
+            Main = Color3.fromRGB(30, 30, 45),          -- Dark navy blue for a sleek background
+            Second = Color3.fromRGB(40, 40, 60),        -- Soft slate blue for depth
+            Stroke = Color3.fromRGB(255, 215, 0),       -- Gold for an elegant accent
+            Divider = Color3.fromRGB(70, 70, 85),       -- Light gray for subtle dividers
+            Text = Color3.fromRGB(255, 255, 255),       -- Bright white for text clarity
             TextDark = Color3.fromRGB(200, 200, 200)     -- Soft gray for secondary text
         }
     },
@@ -33,6 +34,7 @@ local OrionLib = {
     Folder = nil,
     SaveCfg = false
 }
+
 
 
 
