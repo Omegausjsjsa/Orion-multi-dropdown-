@@ -20,19 +20,20 @@ local OrionLib = {
             Text = Color3.fromRGB(240, 240, 240),
             TextDark = Color3.fromRGB(150, 150, 150)
         },
-        Custom = {  -- New custom theme with updated colors
-            Main = Color3.fromRGB(40, 40, 50),         -- Darker main background
-            Second = Color3.fromRGB(50, 50, 60),      -- Lighter shade for secondary elements
-            Stroke = Color3.fromRGB(255, 165, 0),      -- Orange for strokes (vibrant)
-            Divider = Color3.fromRGB(70, 70, 80),      -- Slightly lighter divider
-            Text = Color3.fromRGB(255, 255, 255),      -- Bright white text
-            TextDark = Color3.fromRGB(200, 200, 200)    -- Soft gray for darker text
+        Custom = {  -- New custom theme with unique colors
+            Main = Color3.fromRGB(45, 50, 70),          -- Deep slate blue background
+            Second = Color3.fromRGB(55, 60, 80),        -- Lighter shade for depth
+            Stroke = Color3.fromRGB(0, 204, 204),       -- Vibrant teal for strokes
+            Divider = Color3.fromRGB(90, 95, 110),      -- Soft grayish-blue for dividers
+            Text = Color3.fromRGB(255, 255, 255),       -- Bright white for text
+            TextDark = Color3.fromRGB(200, 200, 200)     -- Soft gray for secondary text
         }
     },
     SelectedTheme = "Custom",  -- Set your custom theme as selected
     Folder = nil,
     SaveCfg = false
 }
+
 
 
 local Icons = {}
