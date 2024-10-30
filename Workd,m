@@ -20,40 +20,19 @@ local OrionLib = {
             Text = Color3.fromRGB(240, 240, 240),
             TextDark = Color3.fromRGB(150, 150, 150)
         },
-        Custom = {  -- New custom theme with background image
-            BackgroundImage = "rbxassetid://116919378717231" -- Your asset ID for background image
+        Custom = {  -- New custom theme with updated colors
+            Main = Color3.fromRGB(40, 40, 50),         -- Darker main background
+            Second = Color3.fromRGB(50, 50, 60),      -- Lighter shade for secondary elements
+            Stroke = Color3.fromRGB(255, 165, 0),      -- Orange for strokes (vibrant)
+            Divider = Color3.fromRGB(70, 70, 80),      -- Slightly lighter divider
+            Text = Color3.fromRGB(255, 255, 255),      -- Bright white text
+            TextDark = Color3.fromRGB(200, 200, 200)    -- Soft gray for darker text
         }
     },
     SelectedTheme = "Custom",  -- Set your custom theme as selected
     Folder = nil,
     SaveCfg = false
 }
-
--- Function to set the background image based on the selected theme
-function OrionLib:SetBackgroundImage(frame)
-    local currentTheme = self.Themes[self.SelectedTheme]
-    
-    local BackgroundImage = Instance.new("ImageLabel")
-    BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Cover the entire frame
-    BackgroundImage.Image = currentTheme.BackgroundImage -- Get the image from the current theme
-    BackgroundImage.BackgroundTransparency = 1 -- Make it transparent
-    BackgroundImage.Parent = frame -- Set the parent to your main frame
-
-    -- Optional: Send to back
-    BackgroundImage.ZIndex = 0 -- Ensure it is behind other UI elements
-end
-
--- Call this function where you create your main UI frame
--- Assuming you have a Frame variable named 'MainFrame' in your UI setup
-local MainFrame = Instance.new("Frame")
-MainFrame.Size = UDim2.new(1, 0, 1, 0)
-MainFrame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
--- Set the background image
-OrionLib:SetBackgroundImage(MainFrame)
-
--- Continue with your existing UI setup...
-
 
 
 local Icons = {}
