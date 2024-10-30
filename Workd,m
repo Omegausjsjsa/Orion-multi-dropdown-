@@ -6,32 +6,34 @@ local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
 
 local OrionLib = {
-	Elements = {},
-	ThemeObjects = {},
-	Connections = {},
-	Flags = {},
-	Themes = {
-		Default = {
-			Main = Color3.fromRGB(25, 25, 35),
-			Second = Color3.fromRGB(32, 32, 42),
-			Stroke = Color3.fromRGB(27, 27, 37),
-			Divider = Color3.fromRGB(60, 60, 70),
-			Text = Color3.fromRGB(240, 240, 240),
-			TextDark = Color3.fromRGB(150, 150, 150)
-		},
-		Custom = {  -- New custom theme
-			Main = Color3.fromRGB(50, 50, 60),
-			Second = Color3.fromRGB(40, 40, 50),
-			Stroke = Color3.fromRGB(35, 35, 45),
-			Divider = Color3.fromRGB(80, 80, 90),
-			Text = Color3.fromRGB(255, 255, 255),
-			TextDark = Color3.fromRGB(200, 200, 200)
-		}
-	},
-	SelectedTheme = "Custom",  -- Set your custom theme as selected
-	Folder = nil,
-	SaveCfg = false
+    Elements = {},
+    ThemeObjects = {},
+    Connections = {},
+    Flags = {},
+    Themes = {
+        Default = {
+            Main = Color3.fromRGB(25, 25, 35),
+            Second = Color3.fromRGB(32, 32, 42),
+            Stroke = Color3.fromRGB(27, 27, 37),
+            Divider = Color3.fromRGB(60, 60, 70),
+            Text = Color3.fromRGB(240, 240, 240),
+            TextDark = Color3.fromRGB(150, 150, 150)
+        },
+        Custom = {  -- New custom theme with background image
+            Main = Color3.fromRGB(50, 50, 60),
+            Second = Color3.fromRGB(40, 40, 50),
+            Stroke = Color3.fromRGB(35, 35, 45),
+            Divider = Color3.fromRGB(80, 80, 90),
+            Text = Color3.fromRGB(255, 255, 255),
+            TextDark = Color3.fromRGB(200, 200, 200),
+            BackgroundImage = "rbxassetid://116919378717231" -- Your asset ID for background image
+        }
+    },
+    SelectedTheme = "Custom",  -- Set your custom theme as selected
+    Folder = nil,
+SaveCfg = false
 }
+
 
 
 local Icons = {}
